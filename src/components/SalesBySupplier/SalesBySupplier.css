@@ -1,0 +1,9 @@
+.sales-supplier-panel { min-height: 438px; padding: 36px 34px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.sales-supplier-panel h2 { margin: 0; color: var(--ink); font-size: clamp(24.64px, calc(23.35px + 0.359vw), 30.24px); }
+.supplier-bars { display: grid; gap: 32px; margin-top: 42px; }
+.supplier-bar-row { display: grid; grid-template-columns: 135px 1fr 140px; align-items: center; gap: 14px; color: #34483e; }
+.supplier-bar-row > span { line-height: 1.35; }
+.supplier-bar { height: 14px; border-radius: 10px; background: #edf1e8; overflow: hidden; }
+.supplier-bar i { display: block; height: 100%; border-radius: inherit; background: #789d70; }
+.sales-supplier-panel > p { margin-top: 30px; color: #7b877e; }
+@media (max-width: 600px) { .supplier-bar-row { grid-template-columns: 1fr; gap: 7px; } }

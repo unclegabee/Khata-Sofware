@@ -1,0 +1,5 @@
+.receive-table-wrap { overflow-x: auto; margin-top: 34px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.receive-table { width: 100%; min-width: 950px; border-collapse: collapse; color: #34483e; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); }
+.receive-table th, .receive-table td { padding: 22px 26px; text-align: left; white-space: nowrap; }
+.receive-table thead { border-bottom: 1px solid #f0f2ed; color: #7d897f; font-size: clamp(13.2px, calc(12.51px + 0.1923vw), 16.2px); letter-spacing: 1px; text-transform: uppercase; }
+.receive-table tbody tr + tr { border-top: 1px solid #f0f2ed; }

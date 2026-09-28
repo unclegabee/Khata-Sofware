@@ -1,0 +1,6 @@
+.shop-settings-panel { padding: 36px 32px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.shop-settings-panel h2 { margin: 0 0 26px; color: var(--ink); font-size: clamp(24.64px, calc(23.35px + 0.359vw), 30.24px); }
+.shop-settings-panel label { display: grid; gap: 10px; margin-top: 22px; color: var(--ink); font-weight: 700; }
+.shop-settings-panel input { width: 100%; min-height: 57px; padding: 0 16px; border: 1px solid #dfe4dc; border-radius: 11px; font: inherit; }
+.shop-settings-panel button { min-height: 60px; margin-top: 22px; padding: 0 25px; border: 0; border-radius: 12px; background: var(--green); color: #fff; font: inherit; font-weight: 700; }
+@media (max-width: 560px) { .shop-settings-panel { padding: 24px 20px; } }

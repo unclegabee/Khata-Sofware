@@ -1,0 +1,13 @@
+.orders-page { width: 100%; padding: clamp(28px, 4vw, 48px) var(--page-gutter); }
+.orders-page .eyebrow { margin: 0 0 18px; color: #8a998e; font-size: 13px; font-weight: 700; letter-spacing: 3px; }
+.orders-page h1 { margin: 0; color: var(--ink); font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1; }
+.orders-intro { margin: 18px 0 40px; color: #7b877e; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); }
+.orders-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.orders-table { width: 100%; min-width: 900px; height: 375px; border-collapse: collapse; color: #34483e; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); }
+.orders-table th, .orders-table td { padding: 22px 30px; text-align: left; white-space: nowrap; }
+.orders-table thead { height: 64px; border-bottom: 1px solid #f0f2ed; color: #7d897f; font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px); letter-spacing: 1px; text-transform: uppercase; }
+.orders-table tbody td { color: #7b877e; text-align: center; }
+@media (max-width: 700px) {
+  .orders-intro { font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); }
+  .orders-table { height: 300px; }
+}

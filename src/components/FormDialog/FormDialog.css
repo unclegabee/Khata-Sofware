@@ -1,0 +1,36 @@
+.form-dialog-backdrop {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(25, 42, 35, 0.45);
+}
+
+.form-dialog {
+  width: min(100%, 560px);
+  max-height: min(90vh, 760px);
+  overflow: auto;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  box-shadow: 0 24px 70px rgba(20, 40, 32, 0.24);
+}
+
+.form-dialog-heading,
+.form-dialog-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.form-dialog-heading h2 { font-size: clamp(19.36px, calc(18.34px + 0.282vw), 23.76px); }
+.form-dialog-heading button { width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 9px; background: #fff; color: var(--ink); font-size: clamp(21.12px, calc(20.01px + 0.3077vw), 25.92px); }
+.form-dialog-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 24px; }
+.form-dialog-fields label { display: grid; gap: 8px; font-weight: 700; }
+.form-dialog-fields label:has(input[name="description"]) { grid-column: 1 / -1; }
+.form-dialog-actions { justify-content: flex-end; margin-top: 24px; }
+.form-dialog-actions button { min-height: 46px; padding: 0 18px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); font-weight: 700; }
+.form-dialog-actions .form-dialog-save { border-color: var(--green); background: var(--green); color: #fff; }
+
+@media (max-width: 520px) {
+  .form-dialog { padding: 18px; }
+  .form-dialog-fields { grid-template-columns: 1fr; }
+}

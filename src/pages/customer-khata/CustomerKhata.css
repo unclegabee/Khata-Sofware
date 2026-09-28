@@ -1,0 +1,26 @@
+.khata-page { width: 100%; padding: 8px 10px 28px; }
+.khata-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.khata-page .eyebrow { margin: 0 0 18px; color: #8a998e; font-size: 13px; font-weight: 700; letter-spacing: 3px; }
+.khata-page h1 { margin: 0; color: var(--ink); font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1; }
+.khata-intro { margin: 18px 0 0; color: #7b877e; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); }
+.khata-primary-button, .recovery-button { border: 0; border-radius: 13px; background: var(--green); color: #fff; font: inherit; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); font-weight: 700; }
+.khata-primary-button { min-width: 236px; min-height: 67px; }
+.khata-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 38px; }
+.khata-stat { display: grid; gap: 18px; min-height: 154px; padding: 30px 32px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
+.khata-stat span { color: #7b877e; font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px); }
+.khata-stat strong { color: #2a4036; font-size: clamp(24.64px, calc(23.35px + 0.359vw), 30.24px); }
+.khata-tools { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: 36px 0 30px; }
+.khata-tools input { order: 2; width: 369px; max-width: 100%; min-height: 61px; padding: 0 18px; border: 1px solid #dfe4dc; border-radius: 12px; font: inherit; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); }
+.recovery-button { min-height: 66px; padding: 0 28px; }
+.customer-cards { display: grid; grid-template-columns: repeat(3, minmax(260px, 1fr)); gap: 26px; }
+.customer-card { min-height: 242px; padding: 34px 32px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.customer-card-heading { display: flex; justify-content: space-between; gap: 16px; }
+.customer-identity { display: flex; align-items: center; gap: 18px; }
+.customer-avatar { display: grid; place-items: center; width: 55px; height: 55px; border-radius: 50%; background: #f1e9dc; color: var(--ink); font-weight: 700; }
+.customer-identity strong, .customer-identity small { display: block; }
+.customer-identity strong { font-size: clamp(18.48px, calc(17.51px + 0.2692vw), 22.68px); }
+.customer-identity small, .customer-due { margin-top: 7px; color: #7b877e; font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px); }
+.customer-arrow { color: var(--ink); font-size: clamp(20.24px, calc(19.18px + 0.2949vw), 24.84px); }
+.customer-amount { display: block; margin-top: 38px; color: var(--ink); font-size: clamp(24.64px, calc(23.35px + 0.359vw), 30.24px); font-weight: 400; }
+@media (max-width: 1000px) { .khata-stats { grid-template-columns: repeat(2, 1fr); } .customer-cards { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 650px) { .khata-page { padding: 28px 16px; } .khata-heading { flex-direction: column; } .khata-primary-button { width: 100%; } .khata-stats, .customer-cards { grid-template-columns: 1fr; } .khata-tools { align-items: stretch; flex-direction: column; } .khata-tools input { order: 0; width: 100%; } .recovery-button { width: 100%; } }

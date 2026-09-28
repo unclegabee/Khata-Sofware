@@ -1,0 +1,22 @@
+.receive-page { width: 100%; padding: clamp(28px, 4vw, 48px) var(--page-gutter); }
+.receive-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.receive-page .eyebrow { margin: 0 0 18px; color: #8a998e; font-size: 13px; font-weight: 700; letter-spacing: 3px; }
+.receive-page h1 { margin: 0; color: var(--ink); font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1; }
+.receive-intro { margin: 18px 0 0; color: #7b877e; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); }
+.receive-primary-button { min-width: 202px; min-height: 63px; margin-top: 2px; border: 0; border-radius: 13px; background: var(--green); color: #fff; font: inherit; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); font-weight: 700; }
+.receive-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 34px; }
+.receive-stat { display: grid; gap: 18px; min-height: 146px; padding: 30px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
+.receive-stat span { color: #7b877e; font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px); }
+.receive-stat strong { color: #2a4036; font-size: clamp(24.64px, calc(23.35px + 0.359vw), 30.24px); }
+.receive-table-wrap { overflow-x: auto; margin-top: 34px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.receive-table { width: 100%; min-width: 950px; border-collapse: collapse; color: #34483e; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); }
+.receive-table th, .receive-table td { padding: 22px 26px; text-align: left; white-space: nowrap; }
+.receive-table thead { border-bottom: 1px solid #f0f2ed; color: #7d897f; font-size: clamp(13.2px, calc(12.51px + 0.1923vw), 16.2px); letter-spacing: 1px; text-transform: uppercase; }
+.receive-table tbody tr + tr { border-top: 1px solid #f0f2ed; }
+.receive-toast { position: fixed; z-index: 1100; right: 24px; bottom: 24px; max-width: min(420px, calc(100vw - 32px)); padding: 15px 20px; border: 1px solid #cfe0ce; border-radius: 12px; background: #f1f7ed; color: var(--green); box-shadow: 0 12px 32px rgba(18, 87, 71, 0.16); font-weight: 700; }
+@media (max-width: 900px) { .receive-stats { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 650px) {
+  .receive-heading { flex-direction: column; }
+  .receive-primary-button { width: 100%; }
+  .receive-stats { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,2 @@
+.app-footer { display: flex; justify-content: space-between; gap: 24px; padding: 0 var(--page-gutter) 18px; color: #82908a; font-size: clamp(13.2px, calc(12.51px + 0.1923vw), 16.2px); }
+@media (max-width: 560px) { .app-footer { flex-direction: column; gap: 6px; padding-bottom: 16px; } }

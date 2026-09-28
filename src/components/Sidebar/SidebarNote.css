@@ -1,0 +1,1 @@
+.sidebar-note { display: grid; gap: 4px; margin-top: 18px; padding: 20px 22px; border-radius: 12px; background: #f6f8f1; color: #78877c; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); line-height: 1.65; }

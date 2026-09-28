@@ -1,0 +1,7 @@
+.returns-search-card { padding: 60px 36px 56px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.returns-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.returns-form-grid label { display: grid; gap: 10px; color: var(--ink); font-weight: 700; }
+.returns-form-grid input, .returns-form-grid select { width: 100%; min-height: 64px; padding: 0 24px; border: 1px solid #dfe4dc; border-radius: 12px; background: #fff; color: #34483e; font: inherit; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); }
+.returns-form-grid select { appearance: auto; }
+.returns-hint { margin: 32px 0 0; color: #7b877e; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); }
+@media (max-width: 700px) { .returns-search-card { padding: 32px 22px; } .returns-form-grid { grid-template-columns: 1fr; gap: 22px; } }

@@ -1,0 +1,8 @@
+.activity-history { margin-top: 38px; }
+.activity-history h2 { margin: 0 0 28px; color: var(--ink); font-size: clamp(19.36px, calc(18.34px + 0.282vw), 23.76px); }
+.activity-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.activity-table { width: 100%; min-width: 700px; height: 375px; border-collapse: collapse; color: #34483e; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); }
+.activity-table th, .activity-table td { padding: 22px 30px; text-align: left; white-space: nowrap; }
+.activity-table thead { height: 64px; border-bottom: 1px solid #f0f2ed; color: #7d897f; font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px); letter-spacing: 1px; text-transform: uppercase; }
+.activity-table tbody td { color: #7b877e; text-align: center; }
+@media (max-width: 560px) { .activity-history h2 { font-size: clamp(20.24px, calc(19.18px + 0.2949vw), 24.84px); } .activity-table { height: 300px; } }

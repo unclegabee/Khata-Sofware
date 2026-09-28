@@ -1,0 +1,242 @@
+.new-delivery-backdrop {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 5vh 5vw;
+  background: rgba(21, 34, 29, 0.48);
+  backdrop-filter: blur(4px);
+}
+
+.new-delivery-dialog {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 1536px);
+  max-height: 90vh;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 24px 80px rgba(15, 33, 27, 0.26);
+}
+
+.new-delivery-header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px 32px;
+  border-bottom: 1px solid #edf0ea;
+  background: #fff;
+}
+
+.new-delivery-header h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(22px, 2vw, 30px);
+}
+
+.new-delivery-close {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--ink);
+  font-size: clamp(23.76px, calc(22.51px + 0.3461vw), 29.16px);
+  line-height: 1;
+}
+
+.new-delivery-scroll {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 30px 32px 34px;
+  scrollbar-color: #aab7aa #f4f6f2;
+  scrollbar-width: thin;
+}
+
+.new-delivery-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(300px, 0.9fr);
+  align-items: start;
+  gap: 30px;
+}
+
+.new-delivery-form {
+  display: grid;
+  min-width: 0;
+  gap: 24px;
+}
+
+.delivery-top-fields,
+.delivery-size-quantity,
+.delivery-payment-fields,
+.cheque-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.delivery-item-fields {
+  display: grid;
+  gap: 20px;
+}
+
+.delivery-field {
+  display: grid;
+  min-width: 0;
+  gap: 9px;
+  color: var(--ink);
+  font-size: clamp(13.2px, calc(12.51px + 0.1923vw), 16.2px);
+  font-weight: 700;
+}
+
+.delivery-field input,
+.delivery-field select {
+  width: 100%;
+  min-width: 0;
+  min-height: 54px;
+  padding: 0 16px;
+  border: 1px solid #dfe5dc;
+  border-radius: 12px;
+  background: #fff;
+  color: #34453e;
+  font: inherit;
+  font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px);
+  font-weight: 400;
+}
+
+.delivery-field input:focus,
+.delivery-field select:focus {
+  border-color: rgba(18, 87, 71, 0.6);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(18, 87, 71, 0.12);
+}
+
+.delivery-field [aria-invalid='true'] { border-color: #bb4e43; }
+
+.delivery-primary-button {
+  width: 100%;
+  min-height: 58px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--green);
+  color: #fff;
+  font: inherit;
+  font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px);
+  font-weight: 700;
+}
+
+.delivery-primary-button:hover { background: #0d493c; }
+.delivery-primary-button:active { transform: translateY(0); }
+
+.delivery-help {
+  margin: -4px 0 0;
+  padding: 17px 19px;
+  border: 1px solid #edf0e7;
+  border-radius: 12px;
+  background: #f8f9f3;
+  color: #758078;
+  font-size: clamp(13.2px, calc(12.51px + 0.1923vw), 16.2px);
+  line-height: 1.55;
+}
+
+.delivery-payment-section {
+  display: grid;
+  gap: 18px;
+  padding-top: 3px;
+}
+
+.delivery-payment-section h3,
+.added-stock-heading h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(17.6px, calc(16.68px + 0.2564vw), 21.6px);
+}
+
+.delivery-payment-fields { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.delivery-payment-fields .delivery-field { font-size: clamp(12.32px, calc(11.67px + 0.1795vw), 15.12px); }
+.delivery-payment-fields .delivery-field input { min-height: 52px; padding-inline: 12px; }
+
+.cheque-details-section {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.cheque-details-toggle {
+  width: 100%;
+  min-height: 50px;
+  padding: 10px 14px;
+  border: 0;
+  background: #f8faf6;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+}
+
+.cheque-details-toggle span { margin-right: 5px; color: var(--green); }
+.cheque-fields { grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 16px; }
+.cheque-fields .delivery-field { font-size: 13px; }
+.cheque-fields .delivery-field input { min-height: 48px; padding-inline: 10px; font-size: clamp(12.32px, calc(11.67px + 0.1795vw), 15.12px); }
+
+.delivery-save-button { margin-top: 1px; }
+
+.added-stock-card {
+  position: sticky;
+  top: 0;
+  min-height: 380px;
+  padding: 25px;
+  border: 1px solid #e7ebe1;
+  border-radius: 20px;
+  background: #f8f9f3;
+}
+
+.added-stock-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.added-stock-count { flex: 0 0 auto; padding: 8px 12px; border-radius: 9px; background: #e8f0e3; color: #587558; font-size: clamp(12.32px, calc(11.67px + 0.1795vw), 15.12px); }
+.added-stock-empty { display: grid; min-height: 280px; place-items: center; margin: 0; color: #89918b; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); line-height: 1.6; text-align: center; }
+.added-stock-list { display: grid; gap: 12px; max-height: 58vh; overflow-y: auto; margin: 20px 0 0; padding: 0; list-style: none; }
+.added-stock-item { display: grid; gap: 8px; padding: 15px; border: 1px solid #e3e8de; border-radius: 12px; background: #fff; color: #69766e; font-size: clamp(12.32px, calc(11.67px + 0.1795vw), 15.12px); line-height: 1.45; }
+.added-stock-item-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; color: var(--ink); }
+.added-stock-item-heading strong { overflow-wrap: anywhere; }
+.added-stock-item-heading button { flex: 0 0 auto; width: 30px; height: 30px; border: 1px solid #ead8d5; border-radius: 8px; background: #fff8f7; color: #a8463d; font-size: clamp(17.6px, calc(16.68px + 0.2564vw), 21.6px); line-height: 1; }
+.added-stock-item small { color: #879189; }
+.delivery-error { display: block; color: #b33f36; font-size: 13px; font-weight: 600; }
+
+@media (max-width: 900px) {
+  .new-delivery-layout { grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr); gap: 20px; }
+  .new-delivery-scroll { padding: 24px; }
+  .new-delivery-header { padding-inline: 24px; }
+  .delivery-payment-fields { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .new-delivery-backdrop { padding: 10px; }
+  .new-delivery-dialog { width: 100%; max-height: calc(100vh - 20px); border-radius: 16px; }
+  .new-delivery-header { padding: 18px; }
+  .new-delivery-scroll { padding: 18px; }
+  .new-delivery-layout { grid-template-columns: 1fr; }
+  .added-stock-card { position: static; min-height: 240px; }
+  .added-stock-empty { min-height: 160px; }
+  .delivery-payment-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .new-delivery-header h2 { font-size: clamp(18.48px, calc(17.51px + 0.2692vw), 22.68px); }
+  .delivery-top-fields,
+  .delivery-size-quantity,
+  .delivery-payment-fields,
+  .cheque-fields { grid-template-columns: 1fr; }
+  .new-delivery-form { gap: 20px; }
+  .delivery-item-fields { gap: 16px; }
+  .added-stock-card { padding: 19px; }
+}

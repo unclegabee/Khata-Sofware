@@ -1,0 +1,100 @@
+.new-customer-page {
+  width: 100%;
+  max-width: 900px;
+  min-height: calc(100vh - 150px);
+  margin: 0 auto;
+  padding: 22px clamp(20px, 2.5vw, 32px) 32px;
+  background: #fff;
+}
+
+.new-customer-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.new-customer-page h1 {
+  color: var(--ink);
+  font-size: clamp(29.92px, calc(28.35px + 0.4359vw), 36.72px);
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.new-customer-close,
+.new-customer-submit {
+  min-height: 66px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.new-customer-close {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  min-height: 60px;
+  padding: 0;
+  font-size: clamp(24.64px, calc(23.35px + 0.359vw), 30.24px);
+  font-weight: 300;
+}
+
+.new-customer-form {
+  margin-top: 26px;
+}
+
+.new-customer-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 30px;
+}
+
+.new-customer-fields label {
+  display: grid;
+  gap: 10px;
+  color: var(--ink);
+  font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px);
+  font-weight: 700;
+}
+
+.new-customer-fields input {
+  min-height: 64px;
+  padding: 0 18px;
+  border-color: #e2e9df;
+  border-radius: 13px;
+  font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px);
+  font-weight: 400;
+}
+
+.new-customer-fields label:nth-child(1),
+.new-customer-fields label:nth-child(2),
+.new-customer-balance { grid-column: 1 / -1; }
+
+.new-customer-balance-note {
+  margin-top: 22px;
+  color: #818a84;
+  font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px);
+}
+
+.new-customer-actions {
+  margin-top: 20px;
+}
+
+.new-customer-submit {
+  width: 100%;
+  border-color: var(--green);
+  border-radius: 13px;
+  background: var(--green);
+  color: #fff;
+  font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .new-customer-page { padding: 18px 16px 28px; }
+  .new-customer-page h1 { font-size: clamp(26.4px, calc(25.02px + 0.3846vw), 32.4px); }
+  .new-customer-fields { gap: 22px 18px; }
+  .new-customer-fields label { font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px); }
+  .new-customer-fields input { min-height: 60px; }
+}

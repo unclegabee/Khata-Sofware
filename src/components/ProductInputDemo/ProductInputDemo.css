@@ -1,0 +1,7 @@
+.product-input-demo { margin-top: 38px; padding: 0 34px 34px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.product-input-demo h2 { margin: 0 0 26px; color: var(--ink); font-size: clamp(19.36px, calc(18.34px + 0.282vw), 23.76px); }
+.product-input-demo > p { color: #7b877e; font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px); }
+.product-code-list { display: grid; gap: 22px; margin-top: 28px; }
+.product-code-list div { display: flex; justify-content: space-between; gap: 20px; color: #34483e; font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px); }
+.product-code-list strong { font-weight: 400; }
+@media (max-width: 600px) { .product-input-demo { padding: 0 20px 24px; } .product-code-list div { align-items: flex-start; flex-direction: column; gap: 5px; } }

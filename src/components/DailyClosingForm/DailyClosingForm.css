@@ -1,0 +1,11 @@
+.daily-closing-form { min-height: 565px; padding: 36px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.daily-closing-form .closing-card-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.daily-closing-form h2 { margin: 0; color: var(--ink); font-size: clamp(19.36px, calc(18.34px + 0.282vw), 23.76px); }
+.daily-closing-form .closing-card-heading span { padding: 9px 13px; border-radius: 8px; background: #fff1d7; color: #aa7419; }
+.daily-closing-form > p { margin: 38px 0 28px; color: #7b877e; font-size: clamp(14.08px, calc(13.34px + 0.2051vw), 17.28px); }
+.daily-closing-form label { display: grid; gap: 10px; margin-top: 24px; color: var(--ink); font-weight: 700; }
+.daily-closing-form input, .daily-closing-form textarea { width: 100%; min-height: 64px; padding: 0 18px; border: 1px solid #dfe4dc; border-radius: 12px; background: #fff; font: inherit; }
+.daily-closing-form textarea { min-height: 64px; resize: vertical; }
+.expected-cash { display: grid; gap: 6px; margin-top: 24px; padding: 20px 22px; border-radius: 12px; background: #f5f7ef; color: #7b877e; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); }
+.daily-closing-form > button { width: 100%; min-height: 67px; margin-top: 0; border: 0; border-radius: 12px; background: var(--green); color: #fff; font: inherit; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); font-weight: 700; }
+@media (max-width: 560px) { .daily-closing-form { padding: 24px 20px; } .daily-closing-form h2 { font-size: clamp(20.24px, calc(19.18px + 0.2949vw), 24.84px); } }

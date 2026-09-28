@@ -1,0 +1,4 @@
+.stock-tools { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: 38px 0 30px; }
+.stock-tools input { width: 375px; max-width: 100%; min-height: 64px; padding: 0 18px; border: 1px solid #dfe4dc; border-radius: 12px; font: inherit; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); }
+.stock-tools button { min-height: 56px; padding: 0 20px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); font: inherit; font-weight: 700; }
+@media (max-width: 650px) { .stock-tools { align-items: stretch; flex-direction: column; } .stock-tools input, .stock-tools button { width: 100%; } }

@@ -1,0 +1,24 @@
+.closing-page { width: 100%; padding: clamp(28px, 4vw, 48px) var(--page-gutter); }
+.closing-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.closing-page .eyebrow { margin: 0 0 18px; color: #8a998e; font-size: 13px; font-weight: 700; letter-spacing: 3px; }
+.closing-page h1 { margin: 0; color: var(--ink); font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1; }
+.closing-intro { margin: 18px 0 0; color: #7b877e; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); }
+.business-date { display: flex; align-items: center; gap: 22px; color: var(--ink); font-weight: 700; }
+.business-date input { width: 240px; min-height: 66px; padding: 0 18px; border: 1px solid #dfe4dc; border-radius: 12px; background: #fff; color: #34483e; font: inherit; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); }
+.closing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 40px; }
+.closing-lower-grid { margin-top: 28px; }
+.opening-card, .movement-card { min-height: 520px; padding: 36px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.closing-card-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.closing-page h2 { margin: 0; color: var(--ink); font-size: clamp(24.64px, calc(23.35px + 0.359vw), 30.24px); }
+.closing-card-heading span { padding: 9px 13px; border-radius: 8px; background: #fff1d7; color: #aa7419; }
+.opening-card > p { margin: 38px 0 28px; color: #7b877e; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); }
+.opening-card label { display: grid; gap: 10px; margin-top: 24px; color: var(--ink); font-weight: 700; }
+.opening-card input, .opening-card textarea { width: 100%; min-height: 64px; padding: 0 18px; border: 1px solid #dfe4dc; border-radius: 12px; background: #fff; font: inherit; }
+.opening-card textarea { min-height: 64px; resize: vertical; }
+.opening-card button { width: 100%; min-height: 67px; margin-top: 24px; border: 0; border-radius: 12px; background: var(--green); color: #fff; font: inherit; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); font-weight: 700; }
+.movement-card h2 { margin-bottom: 28px; }
+.movement-list { display: grid; gap: 24px; }
+.movement-list div, .net-movement { display: flex; justify-content: space-between; gap: 18px; color: #34483e; font-size: clamp(15.84px, calc(15.01px + 0.2308vw), 19.44px); }
+.net-movement { margin-top: 28px; padding-top: 28px; border-top: 1px dashed var(--line); font-size: clamp(18.48px, calc(17.51px + 0.2692vw), 22.68px); }
+@media (max-width: 850px) { .closing-heading { flex-direction: column; } .business-date { align-items: flex-start; flex-direction: column; gap: 10px; } .closing-grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .opening-card, .movement-card { padding: 24px 20px; } .closing-page h2 { font-size: clamp(20.24px, calc(19.18px + 0.2949vw), 24.84px); } .business-date input { width: 100%; } }

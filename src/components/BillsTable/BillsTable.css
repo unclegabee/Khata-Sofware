@@ -1,0 +1,108 @@
+.bills-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.bills-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+  color: #34483e;
+  font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px);
+}
+
+.bills-table th,
+.bills-table td {
+  padding: 24px 30px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.bills-table thead {
+  border-bottom: 1px solid var(--line);
+  color: #7d897f;
+  font-size: clamp(13.2px, calc(12.51px + 0.1923vw), 16.2px);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.bills-table thead th {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bills-table tbody th {
+  font-weight: 700;
+}
+
+.bill-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.bill-actions button {
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+  color: var(--ink);
+  font: inherit;
+  font-size: clamp(13.2px, calc(12.51px + 0.1923vw), 16.2px);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bill-actions .bill-view-btn {
+  background: var(--green-soft);
+  color: var(--green);
+  border-color: rgba(18, 87, 71, 0.2);
+}
+
+.bill-actions .bill-view-btn:hover {
+  background: var(--green);
+  color: #ffffff;
+}
+
+.bill-actions .bill-return-btn:hover {
+  background: #f5f7f3;
+  border-color: #c4d0c1;
+}
+
+.receipt-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 40, 32, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1200;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px;
+  overflow-y: auto;
+}
+
+.receipt-modal-dialog {
+  width: min(100%, 880px);
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  margin-bottom: 30px;
+  animation: receiptModalSlide 0.25s ease-out;
+}
+
+@keyframes receiptModalSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

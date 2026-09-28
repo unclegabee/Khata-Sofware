@@ -1,0 +1,13 @@
+.payment-panel { border: 1px solid var(--line); border-radius: 18px; background: var(--paper); padding: 30px; }
+.payment-panel h2 { margin: 0 0 25px; font-size: clamp(18.48px, calc(17.51px + 0.2692vw), 22.68px); line-height: 1.2; }
+.payment-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.payment-grid label { display: grid; gap: 9px; color: var(--ink); font-weight: 700; }
+.payment-grid input { width: 100%; min-height: 56px; padding: 0 16px; border: 1px solid #dfe4dc; border-radius: 11px; background: #fff; color: #34453e; font: inherit; }
+.cheque-heading { margin: 34px 0 28px; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); }
+.payment-summary { display: grid; gap: 18px; }
+.payment-summary div { display: flex; justify-content: space-between; gap: 18px; font-size: clamp(14.96px, calc(14.18px + 0.2179vw), 18.36px); }
+.cheque-note { margin: 25px 0; color: #818a84; }
+.follow-up-date { display: grid; gap: 9px; color: var(--ink); font-weight: 700; }
+.follow-up-date input { width: 100%; min-height: 60px; padding: 0 16px; border: 1px solid #dfe4dc; border-radius: 11px; background: #fff; color: #34453e; font: inherit; font-weight: 400; }
+@media (max-width: 700px) { .payment-grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .payment-panel { padding: 22px 18px; } }
